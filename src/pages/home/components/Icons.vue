@@ -14,48 +14,46 @@
       </swiper-slide>
     </swiper>
   </div>
-
-
 </template>
 
 <script>
 export default {
   name: 'HomeIcons',
-  data() {
+  data () {
     return {
       iconList: [{
         id: '001',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
         desc: '景点门票'
-      },{
+      }, {
         id: '002',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
         desc: '一日游'
-      },{
+      }, {
         id: '003',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
         desc: '景点门票'
-      },{
+      }, {
         id: '004',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
         desc: '一日游'
-      },{
+      }, {
         id: '005',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
         desc: '景点门票'
-      },{
+      }, {
         id: '006',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
         desc: '一日游'
-      },{
+      }, {
         id: '007',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
         desc: '景点门票'
-      },{
+      }, {
         id: '008',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
         desc: '一日游'
-      },{
+      }, {
         id: '009',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
         desc: '哈哈哈'
@@ -63,11 +61,11 @@ export default {
     }
   },
   computed: {
-    pages() {
+    pages () {
       const pages = []
-      this.iconList.forEach((item,index) => {
-        const page = Math.floor(index/8)
-        if(!pages[page]) {
+      this.iconList.forEach((item, index) => {
+        const page = Math.floor(index / 8)
+        if (!pages[page]) {
           pages[page] = []
         }
         pages[page].push(item)
