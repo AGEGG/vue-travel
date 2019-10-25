@@ -2,13 +2,13 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item" v-for="item of recommendList" :key="item.id">
+      <li class="item" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img" :src='item.imgUrl' />
         </div>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
-          <p class="item-desc">{{item.desc}}</p>
+          <p class="item-desc">{{item.price}}</p>
           <button class="item-button">查看详情</button>
         </div>
       </li>
@@ -20,25 +20,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1707/57/5729585581b6732fa3.water.jpg_200x200_85298361.jpg',
-        title: '大连圣亚海洋世界',
-        desc: '沙河口区'
-      }, {
-        id: '002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg',
-        title: '学生最爱的博物馆',
-        desc: '周末干嘛？北京很多博物馆已经免费开放啦'
-      }, {
-        id: '003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg',
-        title: '学生最爱的博物馆',
-        desc: '周末干嘛？北京很多博物馆已经免费开放啦'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
