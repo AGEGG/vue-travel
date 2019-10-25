@@ -22,9 +22,11 @@ export default {
   props: {
     list: Array
   },
-  data: {
-    swiperOption: {
-      autoplay: false
+  data () {
+    return {
+      swiperOption: {
+        autoplay: false
+      }
     }
   },
   computed: {
