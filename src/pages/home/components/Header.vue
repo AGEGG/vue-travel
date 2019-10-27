@@ -1,16 +1,16 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <div class="iconfont back-icon">&#xe624;</div>
+      <div class="iconfont back-icon">&#xe606;</div>
     </div>
     <div class="header-input">
-      <span class="iconfont">&#xe632;</span>
+      <span class="iconfont">&#xe6aa;</span>
       输入城市/景点/游玩主题
       </div>
     <router-link to='/city'>
       <div class="header-right">
-        {{this.city}}
-        <span class="iconfont arrow-right">&#xe64a;</span>
+        {{this.$store.state.city}}
+        <span class="iconfont arrow-right">&#xe638;</span>
       </div>
     </router-link>
   </div>
@@ -18,10 +18,7 @@
 
 <script>
 export default {
-  name: 'HomeHeader',
-  props: {
-    city: String
-  }
+  name: 'HomeHeader'
 }
 </script>
 
